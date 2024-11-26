@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <img id="img" src="img/All-Black.jpg" class="song-img" alt="">
+            <h1 id="title">All Black</h1>
+            <p id="artist"> Raftaar, Sukh-E</p>
+            <audio id="song" src="songs/All-Black.mp3"></audio>
+            <div id="progress-bar_conatiner">
+                <div class="timer">
+                    <span id="current-time">0:20</span>
+                    <span id="end-time">3:40</span>
+                </div>
+                <div id="progress-bar">
+                    <div id="progressed" class="progressed"></div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <div id="prev"><i class="fa-solid fa-backward"></i></div>
+                <div id="playpause"><i class="fa-solid fa-play" id="Icon"></i></div>
+                <div id="next"><i class="fa-solid fa-forward"></i></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="script1.js"></script>
+</body>
+
+</html>
